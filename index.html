@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradigma University | Ilia Puchkov</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cover">
+      <div class="cover__logo__title">
+        <div class="cover__logo">
+          <img
+            class="cover__logo__image"
+            src="./img/paradigma_logo_light.svg"
+            alt="Paradigma University Logo"
+          />
+        </div>
+        <div class="cover__title">
+          <h1>Paradigma University</h1>
+        </div>
+      </div>
+
+      <div class="cover__navigation">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#student-stories">Student stories</a></li>
+            <li><a href="#our-achievements">Our Achievements</a></li>
+            <li><a href="#campus-life">Campus life</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <div class="cover__hb">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
+    </header>
+    <main class="main__container">
+      <section class="main__section__hero"></section>
+      <section class="main__section__white section__about" id="about">
+        <div>
+          <h2>Who are we?</h2>
+        </div>
+        <div>
+          <p>
+            Paradigma University is a forward-thinking institution dedicated to
+            innovation, global education, and the development of future leaders.
+            Located in a vibrant academic hub, the university offers
+            cutting-edge programs in technology, business, social sciences, and
+            creative disciplines. With a diverse community of students and
+            faculty, Paradigma University provides an environment where ideas
+            grow and possibilities expand.
+          </p>
+        </div>
+        <div>
+          <h2>Our Mission</h2>
+        </div>
+        <div>
+          <p>
+            Our mission is to empower students through transformative education,
+            rigorous research, and opportunities for real-world impact. We
+            strive to cultivate curiosity, encourage critical thinking, and
+            inspire ethical leadership that contributes to a better and more
+            sustainable world.
+          </p>
+        </div>
+      </section>
+      <section class="main__section__colored section__news" id="news">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+          <div class="news-item-box big1">
+            <img src="./img/news/news8.png" alt="" />
+            <h4>Paradigma University Launches New AI Research Center</h4>
+          </div>
+          <div class="news-item-box big2">
+            <img src="./img/news/news3.png" alt="" />
+            <h4>
+              Paradigma Business School Introduces New Entrepreneurship Track
+            </h4>
+          </div>
+
+          <div class="news-item-small small1">
+            <h4>Campus Library Extends Opening Hours</h4>
+            <img src="./img/news/news1.jpg" alt="" />
+          </div>
+          <div class="news-item-small small2">
+            <h4>Paradigma Engineering Team Wins National Robotics Award</h4>
+            <img src="./img/news/news5.jpg" alt="" />
+          </div>
+
+          <div class="news-item-wide wide1">
+            <img src="./img/news/news4.png" alt="" />
+            <h4>International Student Enrollment Reaches New High</h4>
+          </div>
+          <div class="news-item-wide wide2">
+            <img src="./img/news/news7.png" alt="" />
+            <h4>Art & Design Department Opens Annual Exhibition</h4>
+          </div>
+          <div class="news-item-wide wide3">
+            <img src="./img/news/news2.jpg" alt="" />
+            <h4>Construction Begins on New Sports & Wellness Complex</h4>
+          </div>
+
+          <div class="news-item-small-alt small3">
+            <img src="./img/news/news5.jpg" alt="" />
+            <h4>University Partners with GlobalTech Industries</h4>
+          </div>
+          <div class="news-item-small-alt small4">
+            <img src="./img/news/news6.png" alt="" />
+            <h4>Sustainability Week Attracts Record Participation</h4>
+          </div>
+        </div>
+      </section>
+      <section
+        class="main__section__filled section__stories"
+        id="student-stories"
+      >
+        <div class="stories__carousel">
+          <div class="carousel-track">
+            <div class="slide">
+              <img src="./img/student-stories/student-story1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./img/student-stories/student-story2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./img/student-stories/student-story3.png" alt="" />
+            </div>
+          </div>
+
+          <button class="arrow prev">←</button>
+          <button class="arrow next">→</button>
+        </div>
+      </section>
+      <section
+        class="main__section__white section__achievements"
+        id="our-achievements"
+      >
+        <h2>Our Achievements</h2>
+        <div class="achievements-container">
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_1.svg" alt="" />
+            <h3>Top 100 Innovative Universities</h3>
+          </div>
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_2.svg" alt="" />
+            <h3>Award-Winning Research in Renewable Energy</h3>
+          </div>
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_3.svg" alt="" />
+            <h3>Best Student Support Services (National Ranking)</h3>
+          </div>
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_4.svg" alt="" />
+            <h3>Internationally Accredited Business Programs</h3>
+          </div>
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_5.svg" alt="" />
+            <h3>40+ Active Research Labs</h3>
+          </div>
+          <div class="achievement-element">
+            <img src="./img/achievements/achieve_6.svg" alt="" />
+            <h3>90% Graduate Employment Rate</h3>
+          </div>
+        </div>
+      </section>
+      <section class="main__section__colored section__academics" id="academics">
+        <h2>Academics</h2>
+        <div class="academics-container">
+          <div class="academics-chapter-headers">
+            <div class="academics-chapter-header header-1 header-active">
+              <h4>Faculties & Schools</h4>
+            </div>
+            <div class="academics-chapter-header header-2">
+              <h4>Degrees Offered</h4>
+            </div>
+            <div class="academics-chapter-header header-3">
+              <h4>Academic Features</h4>
+            </div>
+            <div class="academics-chapter-header header-4">
+              <h4>Research Opportunities</h4>
+            </div>
+            <div class="academics-chapter-header header-5">
+              <h4>Academic Calendar</h4>
+            </div>
+          </div>
+          <div class="academics-chapter-body body-1 body-active">
+            <p>
+              <strong>1. School of Engineering and Technology</strong> <br />
+              Programs include: Computer Science, Software Engineering, Data
+              Science, Robotics, Cybersecurity. <br />
+              <strong>2. School of Business and Economics </strong
+              ><br />Programs include: International Business, Marketing,
+              Finance, Entrepreneurship, Business Analytics. <br /><strong
+                >3. School of Arts and Humanities </strong
+              ><br />Programs include: Communication Studies, Psychology,
+              History, Philosophy, Languages & Cultural Studies. <br /><strong
+                >4. School of Environmental & Life Sciences </strong
+              ><br />Programs include: Environmental Science, Biotechnology,
+              Sustainable Agriculture, Biomedical Science. <br /><strong
+                >5. School of Design & Media</strong
+              >
+              <br />Programs include: Digital Media, Graphic Design, UX/UI, Film
+              & Visual Production.
+            </p>
+          </div>
+          <div class="academics-chapter-body body-2">
+            <p>
+              Undergraduate Programs (Bachelor’s)<br />Graduate Programs
+              (Master’s & PhD)<br />Professional Certificates<br />Online &
+              Hybrid Courses
+            </p>
+          </div>
+          <div class="academics-chapter-body body-3">
+            <p>
+              <strong>Small class sizes</strong> for personalized learning<br /><strong
+                >International faculty</strong
+              >
+              with industry and research experience<br /><strong
+                >Project-based curriculum</strong
+              >
+              connected to real-world challenges<br /><strong
+                >Study abroad programs</strong
+              >
+              with partner universities worldwide<br /><strong
+                >Career-oriented labs & studios</strong
+              ><br /><strong>Honors Program</strong>
+              for high-achieving students
+            </p>
+          </div>
+          <div class="academics-chapter-body body-4">
+            <p>
+              <strong
+                >Students at Paradigma University can participate in:</strong
+              ><br />
+              40+ specialized research labs <br />Undergraduate researchbr
+              assistantships <br />Innovation challenges & hackathons
+              <br />Collaborative projects with industry partners
+            </p>
+          </div>
+          <div class="academics-chapter-body body-5">
+            <p>
+              <strong>Fall Semester</strong> – September to December
+              <br /><strong>Spring Semester</strong> – February to June
+              <br /><strong>Summer Term</strong> – July to August (optional
+              intensive courses)
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="main__section__filled section__campus-life"
+        id="campus-life"
+      >
+        <iframe
+          width="100%"
+          height="500px"
+          src="https://www.youtube.com/embed/bO4RoQL9H8I?si=HWcUv90Y19QWqskf"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="main__section__white section__admission" id="admission">
+        <h2>Admission</h2>
+        <div class="admissions-content">
+          <h4>
+            Paradigma University welcomes applicants from around the world.
+          </h4>
+
+          <h4>What we look for:</h4>
+          <ul>
+            <li>Strong academic background</li>
+            <li>Motivation and interest in your chosen field</li>
+            <li>Leadership potential and community involvement</li>
+            <li>English language proficiency</li>
+          </ul>
+
+          <h4>Application Requirements:</h4>
+          <ul>
+            <li>Online application form</li>
+            <li>Official transcripts</li>
+            <li>Personal statement (500–700 words)</li>
+            <li>Two letters of recommendation</li>
+            <li>English test results (IELTS, TOEFL, or equivalent)</li>
+            <li>Optional: portfolio (for creative programs)</li>
+          </ul>
+
+          <h4>Important Dates:</h4>
+          <ul>
+            <li>Fall semester application deadline: May 30</li>
+            <li>Spring semester application deadline: November 15</li>
+          </ul>
+
+          <h4>Scholarships:</h4>
+          <p>
+            We offer merit-based and need-based scholarships for outstanding
+            international and domestic students.
+          </p>
+        </div>
+        <div class="admission-cta-buttons">
+          <button class="secondary-button">Learn more</button>
+          <button class="primary-button">Apply now!</button>
+        </div>
+      </section>
+      <section
+        class="main__section__colored section__contact-us"
+        id="contact-us"
+      >
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h4>How to reach us:</h4>
+
+            <p><strong>Paradigma University</strong></p>
+            <p>Innovation Avenue 42</p>
+            <p>Crescent City, 50120</p>
+
+            <br />
+
+            <p><strong>Email:</strong> info@paradigmauniversity.edu</p>
+            <p><strong>Phone:</strong> +39 (555) 214-9034</p>
+
+            <br />
+
+            <p>
+              <strong>Admissions Office:</strong><br />
+              admissions@paradigmauniversity.edu
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <h4>Fill the form below and we will reach you:</h4>
+
+            <form>
+              <div class="form-row">
+                <input type="text" placeholder="Your name" />
+                <input type="email" placeholder="Your e-mail" />
+              </div>
+
+              <textarea placeholder="Your message"></textarea>
+
+              <div class="form-bottom">
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  Accept i Termini e Condizioni
+                </label>
+
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section
+        class="main__section__colored section__where-to-find-us"
+        id="where-to-find-us"
+      >
+        <h2>Where to Find Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5691.75243709149!2d11.349549176879098!3d44.49720307107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb0ed9d74f%3A0x851bdc6a12c818e2!2sFaculty%20of%20Economics%20-%20University%20of%20Bologna!5e0!3m2!1sen!2sit!4v1764908519779!5m2!1sen!2sit"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__socials">
+        <i
+          class="social-icon fa-brands fa-instagram"
+          onclick="window.open('https://instagram.com', '_blank')"
+        ></i>
+        <i
+          class="social-icon fa-brands fa-youtube"
+          onclick="window.open('https://youtube.com', '_blank')"
+        ></i>
+        <i
+          class="social-icon fa-brands fa-facebook"
+          onclick="window.open('https://facebook.com', '_blank')"
+        ></i>
+        <i
+          class="social-icon fa-brands fa-tiktok"
+          onclick="window.open('https://tiktok.com', '_blank')"
+        ></i>
+      </div>
+      <div class="footer__links">
+        <div class="footer__anchors">
+          <a href="#">Latest News</a>
+          <a href="#">Achievements</a>
+          <a href="#">Students' Stories</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Admission</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer__info">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2025 Paradigma University — Inspiring Minds, Shaping the Future</p>
+      </div>
+    </footer>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/academics.js"></script>
+  </body>
+</html>
