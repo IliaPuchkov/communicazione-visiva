@@ -40,21 +40,23 @@ h1 {
   font-family: var(--primary-font);
   font-size: var(--h1);
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
 }
 h2 {
   font-family: var(--primary-font);
   font-size: var(--h2);
   font-weight: normal;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
 }
 h3 {
   font-family: var(--secondary-font);
   font-size: var(--h3);
   font-weight: normal;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
 }
 h4 {
@@ -69,8 +71,10 @@ p {
   font-family: var(--secondary-font);
   font-size: var(--p);
   font-weight: normal;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
+  margin-bottom: 12px;
+  line-height: 170%;
 }
 a {
   font-family: var(--secondary-font);
@@ -80,13 +84,6 @@ a {
   text-decoration: none;
 }
 li {
-  font-family: var(--secondary-font);
-  font-size: var(--p);
-  font-weight: normal;
-  color: var(--primary-color);
-  margin: 0;
-}
-input {
   font-family: var(--secondary-font);
   font-size: var(--p);
   font-weight: normal;
@@ -200,10 +197,6 @@ button.secondary-button:active {
   color: var(--text-color-light);
   transition: color 0.3s ease;
 }
-/* .cover__hb {
-  cursor: pointer;
-  visibility: hidden;
-} */
 .cover__logo__title {
   display: flex;
   flex-direction: row;
@@ -288,25 +281,81 @@ button.secondary-button:active {
   background-color: transparent;
 }
 
+.main__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* about section */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  max-width: 1000px;
+}
+.about-content p {
+  text-align: center;
+}
+.about-cta-button {
+  max-width: fit-content;
+  align-self: center;
+  justify-self: center;
+}
+
 /* student stories */
 
 .stories__carousel {
+  display: flex;
   width: 100%;
-  height: calc(100vh * 0.6);
+  height: 80vh;
   overflow: hidden;
   position: relative;
-  border: 1px solid #ccc;
-  border-radius: 10px;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.3s ease;
+  transition: transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .slide {
   min-width: 100%;
   height: 100%;
+}
+
+.slide h3 {
+  position: absolute;
+  margin-left: 30px;
+  bottom: 15%;
+  width: 100%;
+  color: var(--text-color-light);
+  margin-bottom: 10px;
+}
+
+.slide p {
+  position: absolute;
+  margin-left: 30px;
+  bottom: 5%;
+  width: 50%;
+  color: var(--text-color-light);
+  margin-bottom: 10px;
+}
+
+.slide-dark-block {
+  padding: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  position: absolute;
+  bottom: -30%;
+  min-height: 50%;
+  min-width: 50%;
+  filter: blur(50px);
+  transform: scale(1.2);
 }
 
 .slide img {
@@ -319,12 +368,16 @@ button.secondary-button:active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
   border: none;
   padding: 8px 12px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 50px;
   border-radius: 6px;
+  color: var(--text-color-light);
+}
+
+.arrow:hover {
+  font-size: 60px;
 }
 
 .arrow.prev {
@@ -334,7 +387,7 @@ button.secondary-button:active {
   right: 10px;
 }
 
-/* BOX — большой блок */
+/* news section */
 .news-item-box {
   position: relative;
 }
@@ -353,7 +406,6 @@ button.secondary-button:active {
   color: white;
 }
 
-/* SMALL — маленькие новости */
 .news-item-small,
 .news-item-small-alt {
   display: flex;
@@ -499,6 +551,7 @@ button.secondary-button:active {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .academics-chapter-header {

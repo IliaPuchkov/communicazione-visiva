@@ -66,31 +66,40 @@
     <main class="main__container">
       <section class="main__section__hero"></section>
       <section class="main__section__white section__about" id="about">
-        <div>
-          <h2>Who are we?</h2>
-        </div>
-        <div>
-          <p>
-            Paradigma University is a forward-thinking institution dedicated to
-            innovation, global education, and the development of future leaders.
-            Located in a vibrant academic hub, the university offers
-            cutting-edge programs in technology, business, social sciences, and
-            creative disciplines. With a diverse community of students and
-            faculty, Paradigma University provides an environment where ideas
-            grow and possibilities expand.
-          </p>
-        </div>
-        <div>
-          <h2>Our Mission</h2>
-        </div>
-        <div>
-          <p>
-            Our mission is to empower students through transformative education,
-            rigorous research, and opportunities for real-world impact. We
-            strive to cultivate curiosity, encourage critical thinking, and
-            inspire ethical leadership that contributes to a better and more
-            sustainable world.
-          </p>
+        <div class="about-content">
+          <div>
+            <h2>Who are we?</h2>
+          </div>
+          <div>
+            <p>
+              Paradigma University is a forward-thinking institution dedicated
+              to innovation, global education, and the development of future
+              leaders. Located in a vibrant academic hub, the university offers
+              cutting-edge programs in technology, business, social sciences,
+              and creative disciplines. With a diverse community of students and
+              faculty, Paradigma University provides an environment where ideas
+              grow and possibilities expand.
+            </p>
+          </div>
+          <div>
+            <h2>Our Mission</h2>
+          </div>
+          <div>
+            <p>
+              Our mission is to empower students through transformative
+              education, rigorous research, and opportunities for real-world
+              impact. We strive to cultivate curiosity, encourage critical
+              thinking, and inspire ethical leadership that contributes to a
+              better and more sustainable world.
+            </p>
+          </div>
+          <button
+            class="primary-button about-cta-button"
+            ,
+            onClick="link=('#our-achievements')"
+          >
+            Explore Paradigma
+          </button>
         </div>
       </section>
       <section class="main__section__colored section__news" id="news">
@@ -146,18 +155,53 @@
         <div class="stories__carousel">
           <div class="carousel-track">
             <div class="slide">
+              <img src="./img/student-stories/student-story3.png" alt="" />
+              <div class="slide-dark-block"></div>
+              <h3>Liam Rivera – Business Administration</h3>
+              <p>
+                “Joining the entrepreneurship incubator allowed me to turn a
+                class project into a real company.”
+              </p>
+            </div>
+            <div class="slide">
               <img src="./img/student-stories/student-story1.png" alt="" />
+              <div class="slide-dark-block"></div>
+              <h3>Mei Tanaka – Biotechnology</h3>
+              <p>
+                “Thanks to the university’s lab facilities, I contributed to a
+                research paper as a second-year student.”
+              </p>
             </div>
             <div class="slide">
               <img src="./img/student-stories/student-story2.png" alt="" />
+              <div class="slide-dark-block"></div>
+              <h3>Emily Dawson – Computer Science</h3>
+              <p>
+                “My research internship at Paradigma helped me build the
+                confidence to create my own AI startup.”
+              </p>
             </div>
             <div class="slide">
               <img src="./img/student-stories/student-story3.png" alt="" />
+              <div class="slide-dark-block"></div>
+              <h3>Liam Rivera – Business Administration</h3>
+              <p>
+                “Joining the entrepreneurship incubator allowed me to turn a
+                class project into a real company.”
+              </p>
+            </div>
+            <div class="slide">
+              <img src="./img/student-stories/student-story1.png" alt="" />
+              <div class="slide-dark-block"></div>
+              <h3>Mei Tanaka – Biotechnology</h3>
+              <p>
+                “Thanks to the university’s lab facilities, I contributed to a
+                research paper as a second-year student.”
+              </p>
             </div>
           </div>
-
-          <button class="arrow prev">←</button>
-          <button class="arrow next">→</button>
+          <i class="fa-solid fa-chevron-left arrow prev"></i>
+          <i class="fa-solid fa-chevron-right arrow next"></i>
         </div>
       </section>
       <section
@@ -282,7 +326,7 @@
       >
         <iframe
           width="100%"
-          height="500px"
+          height="500"
           src="https://www.youtube.com/embed/bO4RoQL9H8I?si=HWcUv90Y19QWqskf"
           title="YouTube video player"
           frameborder="0"
@@ -382,21 +426,15 @@
           </div>
         </div>
       </section>
-      <section
-        class="main__section__colored section__where-to-find-us"
-        id="where-to-find-us"
-      >
-        <h2>Where to Find Us</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5691.75243709149!2d11.349549176879098!3d44.49720307107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb0ed9d74f%3A0x851bdc6a12c818e2!2sFaculty%20of%20Economics%20-%20University%20of%20Bologna!5e0!3m2!1sen!2sit!4v1764908519779!5m2!1sen!2sit"
-          width="100%"
-          height="500"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5691.75243709149!2d11.349549176879098!3d44.49720307107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb0ed9d74f%3A0x851bdc6a12c818e2!2sFaculty%20of%20Economics%20-%20University%20of%20Bologna!5e0!3m2!1sen!2sit!4v1764908519779!5m2!1sen!2sit"
+        width="100%"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer class="footer">
       <div class="footer__socials">
