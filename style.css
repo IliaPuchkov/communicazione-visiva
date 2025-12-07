@@ -89,6 +89,7 @@ li {
   font-weight: normal;
   color: var(--primary-color);
   margin: 0;
+  line-height: 170%;
 }
 
 /* CTA Buttons */
@@ -120,9 +121,9 @@ button.primary-button:hover {
   background: var(--secondary-color);
   color: var(--text-color);
   border-color: var(--secondary-color);
-  transition: all 0.3s ease-in-out;
 }
 button.primary-button:active {
+  transition: all 0.1s ease-in-out;
   transform: scale(0.95);
 }
 button.secondary-button {
@@ -153,11 +154,10 @@ button.secondary-button:hover {
   background: var(--secondary-color);
   color: var(--text-color);
   border-color: var(--secondary-color);
-
-  transition: all 0.3s ease-in-out;
 }
 button.secondary-button:active {
   transform: scale(0.95);
+  transition: all 0.1s ease-in-out;
 }
 
 /* header style: */
@@ -267,12 +267,14 @@ button.secondary-button:active {
 
 .main__container .main__section__white {
   background-color: var(--background-light);
-  padding: 20px;
+  padding: 40px;
+  padding-top: 20px;
 }
 
 .main__container .main__section__colored {
   background-color: var(--background-dark);
-  padding: 20px;
+  padding: 40px;
+  padding-top: 20px;
 }
 
 .main__container .main__section__hero {
@@ -390,6 +392,7 @@ button.secondary-button:active {
 /* news section */
 .news-item-box {
   position: relative;
+  overflow: hidden;
 }
 
 .news-item-box img {
@@ -401,9 +404,24 @@ button.secondary-button:active {
 .news-item-box h4 {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  bottom: 10%;
   margin: 0;
   color: white;
+}
+
+.news-box-dark-block {
+  padding: 0px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  min-height: 20%;
+  width: 100%;
+  filter: blur(10px);
+  transform: scale(2.2);
 }
 
 .news-item-small,
@@ -449,7 +467,6 @@ button.secondary-button:active {
   gap: 12px;
 }
 
-/* Раскладка по зонам */
 .news-grid {
   grid-template-areas:
     "big1   small1  wide1"
@@ -466,7 +483,6 @@ button.secondary-button:active {
     "small4 big2    wide3";
 }
 
-/* Привязка элементов */
 .big1 {
   grid-area: big1;
 }
@@ -522,7 +538,7 @@ button.secondary-button:active {
   height: 100%;
 }
 
-/* academics */
+/* academics section*/
 .section__academics {
   position: relative;
 }
@@ -558,6 +574,9 @@ button.secondary-button:active {
   cursor: pointer;
   padding: 10px;
 }
+.academics-chapter-header:hover {
+  background-color: var(--secondary-color);
+}
 .academics-chapter-header h4 {
   color: var(--text-color);
   text-align: center;
@@ -571,6 +590,15 @@ button.secondary-button:active {
   color: var(--text-color-light);
 }
 
+/* campus-life section */
+.section__campus-life {
+  display: flex;
+}
+.campus-life-video {
+  width: 100%;
+  height: 80vh;
+}
+
 /* admission section */
 .admission-cta-buttons {
   display: flex;
@@ -579,11 +607,6 @@ button.secondary-button:active {
 }
 
 /* contact-us section */
-.contact-section {
-  background: #efefff;
-  padding: 80px 60px;
-  font-family: serif;
-}
 
 .contact-wrapper {
   max-width: 1200px;
@@ -594,16 +617,21 @@ button.secondary-button:active {
   align-items: flex-start;
 }
 
-.contact-info h3 {
-  margin-bottom: 20px;
+.contact-info h4 {
+  margin-bottom: 30px;
 }
 
 .contact-info p {
-  line-height: 1.6;
+  line-height: 1;
 }
 
-.contact-form h3 {
-  margin-bottom: 25px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h4 {
+  margin-bottom: 35px;
 }
 
 .form-row {
@@ -619,8 +647,12 @@ button.secondary-button:active {
   border: 1px solid #000;
   font-size: 16px;
 }
+textarea,
+.form-row input {
+  box-sizing: border-box;
+}
 
-textarea {
+.contact-us-form textarea {
   width: 100%;
   height: 180px;
   padding: 16px 18px;
@@ -639,17 +671,11 @@ textarea {
 
 .checkbox {
   font-size: 14px;
+  text-decoration: underline;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-
-button {
-  background: #0a1c2f;
-  color: #fff;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
+.form-bottom button {
+  min-width: fit-content;
 }
