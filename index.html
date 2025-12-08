@@ -39,6 +39,7 @@
             class="cover__logo__image"
             src="./img/paradigma_logo_light.svg"
             alt="Paradigma University Logo"
+            loading="lazy"
           />
         </div>
         <div class="cover__title">
@@ -59,13 +60,33 @@
           </ul>
         </nav>
       </div>
-      <!-- <div class="cover__hb">
+      <div class="cover__hb">
         <i class="fa-solid fa-bars"></i>
-      </div> -->
+      </div>
+      <div class="cover__hb-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="cover__hb-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#student-stories">Student stories</a></li>
+          <li><a href="#our-achievements">Our Achievements</a></li>
+          <li><a href="#campus-life">Campus life</a></li>
+          <li><a href="#admission">Admission</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main__container">
-      <section class="main__section__hero"></section>
-      <section class="main__section__white section__about" id="about">
+      <section class="main__section__hero">
+        <div class="parallax-bg"></div>
+        <h1 class="hero-title parallax-title">Paradigma</h1>
+      </section>
+      <section
+        class="main__section__white section__about fade-block"
+        id="about"
+      >
         <div class="about-content">
           <div>
             <h2>Who are we?</h2>
@@ -102,16 +123,19 @@
           </button>
         </div>
       </section>
-      <section class="main__section__colored section__news" id="news">
+      <section
+        class="main__section__colored section__news fade-block"
+        id="news"
+      >
         <h2>Latest News</h2>
         <div class="news-grid">
           <div class="news-item-box big1">
-            <img src="./img/news/news8.png" alt="" />
+            <img src="./img/news/news8.png" alt="" loading="lazy" />
             <div class="news-box-dark-block"></div>
             <h4>Paradigma University Launches New AI Research Center</h4>
           </div>
           <div class="news-item-box big2">
-            <img src="./img/news/news3.png" alt="" />
+            <img src="./img/news/news3.png" alt="" loading="lazy" />
             <div class="news-box-dark-block"></div>
             <h4>
               Paradigma Business School Introduces New Entrepreneurship Track
@@ -120,44 +144,48 @@
 
           <div class="news-item-small small1">
             <h4>Campus Library Extends Opening Hours</h4>
-            <img src="./img/news/news1.jpg" alt="" />
+            <img src="./img/news/news1.jpg" alt="" loading="lazy" />
           </div>
           <div class="news-item-small small2">
             <h4>Paradigma Engineering Team Wins National Robotics Award</h4>
-            <img src="./img/news/news5.jpg" alt="" />
+            <img src="./img/news/news5.jpg" alt="" loading="lazy" />
           </div>
 
           <div class="news-item-wide wide1">
-            <img src="./img/news/news4.png" alt="" />
+            <img src="./img/news/news4.png" alt="" loading="lazy" />
             <h4>International Student Enrollment Reaches New High</h4>
           </div>
           <div class="news-item-wide wide2">
-            <img src="./img/news/news7.png" alt="" />
+            <img src="./img/news/news7.png" alt="" loading="lazy" />
             <h4>Art & Design Department Opens Annual Exhibition</h4>
           </div>
           <div class="news-item-wide wide3">
-            <img src="./img/news/news2.jpg" alt="" />
+            <img src="./img/news/news2.jpg" alt="" loading="lazy" />
             <h4>Construction Begins on New Sports & Wellness Complex</h4>
           </div>
 
           <div class="news-item-small-alt small3">
-            <img src="./img/news/news5.jpg" alt="" />
+            <img src="./img/news/news5.jpg" alt="" loading="lazy" />
             <h4>University Partners with GlobalTech Industries</h4>
           </div>
           <div class="news-item-small-alt small4">
-            <img src="./img/news/news6.png" alt="" />
+            <img src="./img/news/news6.png" alt="" loading="lazy" />
             <h4>Sustainability Week Attracts Record Participation</h4>
           </div>
         </div>
       </section>
       <section
-        class="main__section__filled section__stories"
+        class="main__section__filled section__stories fade-block"
         id="student-stories"
       >
         <div class="stories__carousel">
           <div class="carousel-track">
             <div class="slide">
-              <img src="./img/student-stories/student-story3.png" alt="" />
+              <img
+                src="./img/student-stories/student-story3.png"
+                alt=""
+                loading="lazy"
+              />
               <div class="slide-dark-block"></div>
               <h3>Liam Rivera – Business Administration</h3>
               <p>
@@ -166,7 +194,11 @@
               </p>
             </div>
             <div class="slide">
-              <img src="./img/student-stories/student-story1.png" alt="" />
+              <img
+                src="./img/student-stories/student-story1.png"
+                alt=""
+                loading="lazy"
+              />
               <div class="slide-dark-block"></div>
               <h3>Mei Tanaka – Biotechnology</h3>
               <p>
@@ -175,7 +207,11 @@
               </p>
             </div>
             <div class="slide">
-              <img src="./img/student-stories/student-story2.png" alt="" />
+              <img
+                src="./img/student-stories/student-story2.png"
+                alt=""
+                loading="lazy"
+              />
               <div class="slide-dark-block"></div>
               <h3>Emily Dawson – Computer Science</h3>
               <p>
@@ -184,7 +220,11 @@
               </p>
             </div>
             <div class="slide">
-              <img src="./img/student-stories/student-story3.png" alt="" />
+              <img
+                src="./img/student-stories/student-story3.png"
+                alt=""
+                loading="lazy"
+              />
               <div class="slide-dark-block"></div>
               <h3>Liam Rivera – Business Administration</h3>
               <p>
@@ -193,7 +233,11 @@
               </p>
             </div>
             <div class="slide">
-              <img src="./img/student-stories/student-story1.png" alt="" />
+              <img
+                src="./img/student-stories/student-story1.png"
+                alt=""
+                loading="lazy"
+              />
               <div class="slide-dark-block"></div>
               <h3>Mei Tanaka – Biotechnology</h3>
               <p>
@@ -207,38 +251,41 @@
         </div>
       </section>
       <section
-        class="main__section__white section__achievements"
+        class="main__section__white section__achievements fade-block"
         id="our-achievements"
       >
         <h2>Our Achievements</h2>
         <div class="achievements-container">
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_1.svg" alt="" />
+            <img src="./img/achievements/achieve_1.svg" alt="" loading="lazy" />
             <h3>Top 100 Innovative Universities</h3>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_2.svg" alt="" />
+            <img src="./img/achievements/achieve_2.svg" alt="" loading="lazy" />
             <h3>Award-Winning Research in Renewable Energy</h3>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_3.svg" alt="" />
+            <img src="./img/achievements/achieve_3.svg" alt="" loading="lazy" />
             <h3>Best Student Support Services (National Ranking)</h3>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_4.svg" alt="" />
+            <img src="./img/achievements/achieve_4.svg" alt="" loading="lazy" />
             <h3>Internationally Accredited Business Programs</h3>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_5.svg" alt="" />
+            <img src="./img/achievements/achieve_5.svg" alt="" loading="lazy" />
             <h3>40+ Active Research Labs</h3>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_6.svg" alt="" />
+            <img src="./img/achievements/achieve_6.svg" alt="" loading="lazy" />
             <h3>90% Graduate Employment Rate</h3>
           </div>
         </div>
       </section>
-      <section class="main__section__colored section__academics" id="academics">
+      <section
+        class="main__section__colored section__academics fade-block"
+        id="academics"
+      >
         <h2>Academics</h2>
         <div class="academics-container">
           <div class="academics-chapter-headers">
@@ -333,7 +380,7 @@
         </div>
       </section>
       <section
-        class="main__section__filled section__campus-life"
+        class="main__section__filled section__campus-life fade-block"
         id="campus-life"
       >
         <iframe
@@ -346,7 +393,10 @@
           allowfullscreen
         ></iframe>
       </section>
-      <section class="main__section__white section__admission" id="admission">
+      <section
+        class="main__section__white section__admission fade-block"
+        id="admission"
+      >
         <h2>Admission</h2>
         <div class="admissions-content">
           <h4>
@@ -389,7 +439,7 @@
         </div>
       </section>
       <section
-        class="main__section__colored section__contact-us"
+        class="main__section__colored section__contact-us fade-block"
         id="contact-us"
       >
         <h2>Contact Us</h2>
@@ -438,6 +488,7 @@
         </div>
       </section>
       <iframe
+        class="map fade-block"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5691.75243709149!2d11.349549176879098!3d44.49720307107462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb0ed9d74f%3A0x851bdc6a12c818e2!2sFaculty%20of%20Economics%20-%20University%20of%20Bologna!5e0!3m2!1sen!2sit!4v1764908519779!5m2!1sen!2sit"
         width="100%"
         height="500"
@@ -488,5 +539,7 @@
     </footer>
     <script src="./js/carousel.js"></script>
     <script src="./js/academics.js"></script>
+    <script src="./js/beautiful-scroll.js"></script>
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>
