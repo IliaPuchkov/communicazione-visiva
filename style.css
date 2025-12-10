@@ -2,7 +2,7 @@
 :root {
   /* palette colore */
   --primary-color: #021c34;
-  --secondary-color: #29b1ff;
+  --secondary-color: #a1ddff;
   --background-light: #fff;
   --background-dark: #efefff;
   --accent-color: #ff3131;
@@ -243,10 +243,14 @@ button.secondary-button:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .cover-top {
+  position: relative;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -257,25 +261,25 @@ button.secondary-button:active {
 }
 .cover-bottom {
   position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  padding: 25px 20px;
+  top: 100%;
+  right: 0;
+  padding: 15px 20px;
+
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  visibility: hidden;
-  transform: translateY(-5px);
+  transform: translateY(-50px);
   opacity: 0;
   background-color: var(--primary-color);
-  flex-wrap: wrap;
+  box-sizing: border-box;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .cover-bottom.hb-active {
-  visibility: visible;
   opacity: 1;
   transform: translateY(0);
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .cover__hb-menu-button {
   text-decoration: none;
@@ -291,12 +295,13 @@ button.secondary-button:active {
 .footer {
   height: fit-content;
   background-color: var(--primary-color);
-  padding: 5px 20px;
+  padding: 5px 10%;
   visibility: visible;
 }
 .footer-wrapper {
   max-width: 1200px;
   justify-self: center;
+  width: 100%;
 }
 .footer p {
   color: var(--text-color-light);
@@ -356,15 +361,13 @@ button.secondary-button:active {
   background-color: var(--background-light);
   padding: 40px;
   padding-top: 20px;
-  scroll-margin-top: 85.5px;
 }
 .main__container .main__section__colored {
   background-color: var(--background-dark);
   padding: 40px;
   padding-top: 20px;
-  scroll-margin-top: 85.5px;
 }
-.main__container .main__section__filled {
+.main__container .fade-block {
   scroll-margin-top: 85.5px;
 }
 .main__container {
@@ -585,6 +588,7 @@ button.secondary-button:active {
 .news-item-wide:hover {
   transition: all 0.3s;
   transform: scale(1.02);
+  filter: drop-shadow(4px 2px 5px var(--shadow-color));
 }
 .news-item-box:active,
 .news-item-small:active,
@@ -592,6 +596,7 @@ button.secondary-button:active {
 .news-item-wide:active {
   transition: all 0.3s;
   transform: scale(1);
+  filter: drop-shadow(4px 4px 4px var(--shadow-color));
 }
 .news-grid {
   max-width: 1200px;
@@ -709,9 +714,11 @@ button.secondary-button:active {
 .academics-chapter-header {
   cursor: pointer;
   padding: 10px 40px;
+  border: 1px solid var(--primary-color);
 }
 .academics-chapter-header:hover {
   background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
 }
 .academics-chapter-header:hover h4 {
   color: var(--text-color);
@@ -757,6 +764,7 @@ button.secondary-button:active {
 .admissions-content {
   max-width: 1200px;
   justify-self: center;
+  width: 100%;
 }
 .admission-cta-buttons {
   display: flex;
@@ -839,11 +847,6 @@ textarea,
   .cover__hb {
     display: block;
   }
-  .cover-bottom.hb-active {
-    display: flex;
-    transform: translateY(60px);
-    transition: 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
 }
 
 @media (max-width: 1024px) {
@@ -884,13 +887,11 @@ textarea,
     background-color: var(--background-light);
     padding: 15px;
     padding-top: 20px;
-    scroll-margin-top: 85.5px;
   }
   .main__container .main__section__colored {
     background-color: var(--background-dark);
     padding: 15px;
     padding-top: 20px;
-    scroll-margin-top: 85.5px;
   }
   .news-item-wide {
     grid-template-rows: minmax(0, 6fr) minmax(0, 4fr);
