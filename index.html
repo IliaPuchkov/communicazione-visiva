@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
               <img
                 class="cover__logo__image"
                 src="./img/paradigma_logo_light.svg"
-                alt="Paradigma University Logo"
+                alt="Paradigma University"
                 loading="lazy"
               />
             </div>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="cover__navigation">
-            <nav>
+            <nav aria-label="Main navigation">
               <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#news">News</a></li>
@@ -62,15 +62,35 @@
               </ul>
             </nav>
           </div>
-          <div class="cover__hb">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="cover__hb-close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
+
+          <button
+            class="cover__hb"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <button
+            class="cover__hb-close"
+            aria-label="Close navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
         </div>
+
         <div class="cover-bottom">
-          <div class="cover__hb-menu">
+          <nav
+            id="mobile-menu"
+            class="cover__hb-menu"
+            aria-label="Mobile navigation"
+            hidden
+          >
             <a class="cover__hb-menu-button" href="#about">About</a>
             <a class="cover__hb-menu-button" href="#news">News</a>
             <a class="cover__hb-menu-button" href="#student-stories"
@@ -82,13 +102,16 @@
             <a class="cover__hb-menu-button" href="#campus-life">Campus life</a>
             <a class="cover__hb-menu-button" href="#admission">Admission</a>
             <a class="cover__hb-menu-button" href="#contact-us">Contact us</a>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
     <main class="main__container">
-      <section class="main__section__hero">
-        <div class="parallax-bg"></div>
+      <section
+        class="main__section__hero"
+        aria-label="Welcome to Paradigma University"
+      >
+        <div class="parallax-bg" aria-hidden="true"></div>
         <h1 class="hero-title parallax-title">Paradigma</h1>
       </section>
       <section
@@ -137,60 +160,106 @@
       >
         <h2>Latest News</h2>
         <div class="news-grid">
-          <div class="news-item-box big1">
-            <img src="./img/news/news8.png" alt="" loading="lazy" />
-            <div class="news-box-dark-block"></div>
+          <article class="news-item-box big1">
+            <img
+              src="./img/news/news8.png"
+              alt="Modern AI research facility with advanced computing equipment"
+              loading="lazy"
+            />
+            <div class="news-box-dark-block" aria-hidden="true"></div>
             <h4>Paradigma University Launches New AI Research Center</h4>
-          </div>
-          <div class="news-item-box big2">
-            <img src="./img/news/news3.png" alt="" loading="lazy" />
-            <div class="news-box-dark-block"></div>
+          </article>
+
+          <article class="news-item-box big2">
+            <img
+              src="./img/news/news3.png"
+              alt="Business students collaborating in modern classroom"
+              loading="lazy"
+            />
+            <div class="news-box-dark-block" aria-hidden="true"></div>
             <h4>
               Paradigma Business School Introduces New Entrepreneurship Track
             </h4>
-          </div>
+          </article>
 
-          <div class="news-item-small small1">
+          <article class="news-item-small small1">
             <h4>Campus Library Extends Opening Hours</h4>
-            <img src="./img/news/news1.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="news-item-small small2">
-            <h4>Paradigma Engineering Team Wins National Robotics Award</h4>
-            <img src="./img/news/news5.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="news-item-small-alt small3">
-            <img src="./img/news/news5.jpg" alt="" loading="lazy" />
-            <h4>University Partners with GlobalTech Industries</h4>
-          </div>
-          <div class="news-item-small-alt small4">
-            <img src="./img/news/news6.png" alt="" loading="lazy" />
-            <h4>Sustainability Week Attracts Record Participation</h4>
-          </div>
+            <img
+              src="./img/news/news1.jpg"
+              alt="Students studying in library"
+              loading="lazy"
+            />
+          </article>
 
-          <div class="news-item-wide wide1">
-            <img src="./img/news/news4.png" alt="" loading="lazy" />
+          <article class="news-item-small small2">
+            <h4>Paradigma Engineering Team Wins National Robotics Award</h4>
+            <img
+              src="./img/news/news5.jpg"
+              alt="Engineering students with robotics project"
+              loading="lazy"
+            />
+          </article>
+
+          <article class="news-item-small-alt small3">
+            <img
+              src="./img/news/news5.jpg"
+              alt="Business partnership signing ceremony"
+              loading="lazy"
+            />
+            <h4>University Partners with GlobalTech Industries</h4>
+          </article>
+
+          <article class="news-item-small-alt small4">
+            <img
+              src="./img/news/news6.png"
+              alt="Students participating in sustainability event"
+              loading="lazy"
+            />
+            <h4>Sustainability Week Attracts Record Participation</h4>
+          </article>
+
+          <article class="news-item-wide wide1">
+            <img
+              src="./img/news/news4.png"
+              alt="Diverse group of international students on campus"
+              loading="lazy"
+            />
             <h4>International Student Enrollment Reaches New High</h4>
-          </div>
-          <div class="news-item-wide wide2">
-            <img src="./img/news/news7.png" alt="" loading="lazy" />
+          </article>
+
+          <article class="news-item-wide wide2">
+            <img
+              src="./img/news/news7.png"
+              alt="Art gallery exhibition with creative works"
+              loading="lazy"
+            />
             <h4>Art & Design Department Opens Annual Exhibition</h4>
-          </div>
-          <div class="news-item-wide wide3">
-            <img src="./img/news/news2.jpg" alt="" loading="lazy" />
+          </article>
+
+          <article class="news-item-wide wide3">
+            <img
+              src="./img/news/news2.jpg"
+              alt="Construction site of new sports complex"
+              loading="lazy"
+            />
             <h4>Construction Begins on New Sports & Wellness Complex</h4>
-          </div>
+          </article>
         </div>
       </section>
       <section
         class="main__section__filled section__stories fade-block"
         id="student-stories"
       >
-        <div class="stories__carousel">
+        <div
+          class="stories__carousel"
+          aria-label="Student testimonials"
+          aria-roledescription="carousel"
+        >
           <div class="carousel-track">
             <div class="slide">
               <img
                 src="./img/student-stories/student-story3.png"
-                alt=""
+                alt="Liam Rivera presenting business plan"
                 loading="lazy"
               />
               <div class="slide-dark-block-container">
@@ -207,7 +276,7 @@
             <div class="slide">
               <img
                 src="./img/student-stories/student-story1.png"
-                alt=""
+                alt="Mei Tanaka working in biotechnology laboratory"
                 loading="lazy"
               />
               <div class="slide-dark-block-container">
@@ -224,7 +293,7 @@
             <div class="slide">
               <img
                 src="./img/student-stories/student-story2.png"
-                alt=""
+                alt="Emily Dawson coding on computer"
                 loading="lazy"
               />
               <div class="slide-dark-block-container">
@@ -241,7 +310,7 @@
             <div class="slide">
               <img
                 src="./img/student-stories/student-story3.png"
-                alt=""
+                alt="Liam Rivera presenting business plan"
                 loading="lazy"
               />
               <div class="slide-dark-block-container">
@@ -258,7 +327,7 @@
             <div class="slide">
               <img
                 src="./img/student-stories/student-story1.png"
-                alt=""
+                alt="Mei Tanaka working in biotechnology laboratory"
                 loading="lazy"
               />
               <div class="slide-dark-block-container">
@@ -273,8 +342,14 @@
               </div>
             </div>
           </div>
-          <i class="fa-solid fa-chevron-left arrow prev"></i>
-          <i class="fa-solid fa-chevron-right arrow next"></i>
+          <i
+            class="fa-solid fa-chevron-left arrow prev"
+            aria-label="Previous student story"
+          ></i>
+          <i
+            class="fa-solid fa-chevron-right arrow next"
+            aria-label="Next student story"
+          ></i>
         </div>
       </section>
       <section
@@ -284,27 +359,57 @@
         <h2>Our Achievements</h2>
         <div class="achievements-container">
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_1.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_1.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>Top 100 Innovative Universities</p>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_2.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_2.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>Award-Winning Research in Renewable Energy</p>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_3.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_3.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>Best Student Support Services (National Ranking)</p>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_4.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_4.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>Internationally Accredited Business Programs</p>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_5.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_5.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>40+ Active Research Labs</p>
           </div>
           <div class="achievement-element">
-            <img src="./img/achievements/achieve_6.svg" alt="" loading="lazy" />
+            <img
+              src="./img/achievements/achieve_6.svg"
+              alt=""
+              role="presentation"
+              loading="lazy"
+            />
             <p>90% Graduate Employment Rate</p>
           </div>
         </div>
@@ -315,24 +420,63 @@
       >
         <h2>Academics</h2>
         <div class="academics-container">
-          <div class="academics-chapter-headers">
-            <div class="academics-chapter-header header-1 header-active">
+          <div
+            class="academics-chapter-headers"
+            role="tablist"
+            aria-label="Academic information categories"
+          >
+            <div
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-1"
+              id="tab-1"
+              class="academics-chapter-header header-1 header-active"
+            >
               <h4>Faculties & Schools</h4>
             </div>
-            <div class="academics-chapter-header header-2">
+            <div
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-2"
+              id="tab-2"
+              class="academics-chapter-header header-2"
+            >
               <h4>Degrees Offered</h4>
             </div>
-            <div class="academics-chapter-header header-3">
+            <div
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-3"
+              id="tab-3"
+              class="academics-chapter-header header-3"
+            >
               <h4>Academic Features</h4>
             </div>
-            <div class="academics-chapter-header header-4">
+            <div
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-4"
+              id="tab-4"
+              class="academics-chapter-header header-4"
+            >
               <h4>Research Opportunities</h4>
             </div>
-            <div class="academics-chapter-header header-5">
+            <div
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-5"
+              id="tab-5"
+              class="academics-chapter-header header-5"
+            >
               <h4>Academic Calendar</h4>
             </div>
           </div>
-          <div class="academics-chapter-body body-1 body-active">
+          <div
+            role="tabpanel"
+            id="panel-1"
+            aria-labelledby="tab-1"
+            class="academics-chapter-body body-1 body-active"
+          >
             <p>
               <strong>1. School of Engineering and Technology</strong> <br />
               Programs include: Computer Science, Software Engineering, Data
@@ -352,7 +496,12 @@
               & Visual Production.
             </p>
           </div>
-          <div class="academics-chapter-body body-2">
+          <div
+            role="tabpanel"
+            id="panel-2"
+            aria-labelledby="tab-2"
+            class="academics-chapter-body body-2"
+          >
             <ul>
               <li>Undergraduate Programs (Bachelor’s)</li>
               <li>Graduate Programs (Master’s & PhD)</li>
@@ -360,7 +509,12 @@
               <li>Online & Hybrid Courses</li>
             </ul>
           </div>
-          <div class="academics-chapter-body body-3">
+          <div
+            role="tabpanel"
+            id="panel-3"
+            aria-labelledby="tab-3"
+            class="academics-chapter-body body-3"
+          >
             <ul>
               <li>
                 <strong>Small class sizes</strong> for personalized learning
@@ -383,7 +537,12 @@
               </li>
             </ul>
           </div>
-          <div class="academics-chapter-body body-4">
+          <div
+            role="tabpanel"
+            id="panel-4"
+            aria-labelledby="tab-4"
+            class="academics-chapter-body body-4"
+          >
             <p>
               <strong
                 >Students at Paradigma University can participate in:</strong
@@ -396,7 +555,12 @@
               <li>Collaborative projects with industry partners</li>
             </ul>
           </div>
-          <div class="academics-chapter-body body-5">
+          <div
+            role="tabpanel"
+            id="panel-5"
+            aria-labelledby="tab-5"
+            class="academics-chapter-body body-5"
+          >
             <p>
               <strong>Fall Semester</strong> – September to December
               <br /><strong>Spring Semester</strong> – February to June
@@ -414,10 +578,11 @@
         <video
           class="campus-life-video"
           src="./src/campus-life.mp4"
-          autoplay
+          controls
           muted
           playsinline
           loop
+          aria-label="Campus life video tour showing student activities and facilities"
         ></video>
       </section>
       <section
@@ -480,35 +645,121 @@
 
             <br />
 
-            <p><strong>Email:</strong> info@paradigmauniversity.edu</p>
-            <p><strong>Phone:</strong> +39 (555) 214-9034</p>
+            <p>
+              <strong>Email:</strong>
+              <a
+                href="mailto:info@paradigmauniversity.edu"
+                style="color: blue; text-decoration: underline"
+                >info@paradigmauniversity.edu</a
+              >
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a
+                href="tel:+395552149034"
+                style="color: blue; text-decoration: underline"
+                >+39 (555) 214-9034</a
+              >
+            </p>
 
             <br />
 
             <p>
               <strong>Admissions Office:</strong><br />
-              admissions@paradigmauniversity.edu
+              <a
+                href="mailto:admissions@paradigmauniversity.edu"
+                style="color: blue; text-decoration: underline"
+                >admissions@paradigmauniversity.edu</a
+              >
             </p>
           </div>
 
           <div class="contact-form">
             <h4>Fill the form below and we will reach you:</h4>
 
-            <form class="contact-us-form">
+            <form
+              class="contact-us-form"
+              aria-labelledby="contact-form-heading"
+            >
               <div class="form-row">
-                <input type="text" placeholder="Your name" />
-                <input type="email" placeholder="Your e-mail" />
+                <div class="form-field">
+                  <label for="contact-name">
+                    Your name
+                    <span class="required" aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    required
+                    aria-required="true"
+                    autocomplete="name"
+                  />
+                  <span id="email-format" class="field-hint"
+                    >For example: John</span
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email">
+                    Your email
+                    <span class="required" aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                    aria-required="true"
+                    autocomplete="email"
+                    aria-describedby="email-format"
+                  />
+                  <span id="email-format" class="field-hint"
+                    >Format: example@domain.com</span
+                  >
+                </div>
               </div>
 
-              <textarea placeholder="Your message"></textarea>
+              <div class="form-field">
+                <label for="contact-message">
+                  Your message
+                  <span class="required" aria-label="required">*</span>
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  rows="5"
+                ></textarea>
+              </div>
+
               <div class="form-bottom">
-                <p class="checkbox">
-                  <input type="checkbox" />
-                  Accept Privacy Policy
-                </p>
+                <div class="checkbox-field">
+                  <input
+                    type="checkbox"
+                    id="privacy-policy"
+                    name="privacy"
+                    required
+                    aria-required="true"
+                  />
+                  <label for="privacy-policy">
+                    I accept the
+                    <a href="#" style="color: blue; text-decoration: underline"
+                      >Privacy Policy</a
+                    >
+                  </label>
+                </div>
 
-                <button class="primary-button" , type="submit">Send</button>
+                <button class="primary-button" type="submit">Send</button>
               </div>
+
+              <div
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></div>
             </form>
           </div>
         </div>
@@ -522,29 +773,50 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Interactive map of Paradigma University campus location"
       ></iframe>
     </main>
     <footer class="footer">
       <div class="footer-wrapper">
-        <div class="footer__socials">
-          <i
-            class="social-icon fa-brands fa-instagram"
-            onclick="window.open('https://instagram.com', '_blank')"
-          ></i>
-          <i
-            class="social-icon fa-brands fa-youtube"
-            onclick="window.open('https://youtube.com', '_blank')"
-          ></i>
-          <i
-            class="social-icon fa-brands fa-facebook"
-            onclick="window.open('https://facebook.com', '_blank')"
-          ></i>
-          <i
-            class="social-icon fa-brands fa-tiktok"
-            onclick="window.open('https://tiktok.com', '_blank')"
-          ></i>
-        </div>
-        <div class="footer__links">
+        <nav class="footer__socials" aria-label="Social media">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Instagram (opens in new window)"
+            class="social-icon"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Subscribe to our YouTube channel (opens in new window)"
+            class="social-icon"
+          >
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Facebook (opens in new window)"
+            class="social-icon"
+          >
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on TikTok (opens in new window)"
+            class="social-icon"
+          >
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+        </nav>
+        <div class="footer__links" aria-label="Footer navigation">
           <div class="footer__anchors">
             <a href="#">Latest News</a>
             <a href="#">Achievements</a>
@@ -553,7 +825,7 @@
             <a href="#">Admission</a>
             <a href="#">Contact Us</a>
           </div>
-          <div class="footer__info">
+          <div class="footer__info" aria-label="Legal and site information">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
             <a href="#">Accessibility</a>

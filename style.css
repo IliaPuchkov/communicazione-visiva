@@ -2,7 +2,7 @@
 :root {
   /* palette colore */
   --primary-color: #021c34;
-  --secondary-color: #a1ddff;
+  --secondary-color: #0f4c85;
   --background-light: #fff;
   --background-dark: #efefff;
   --accent-color: #ff3131;
@@ -127,7 +127,7 @@ button.primary-button {
 }
 button.primary-button:hover {
   background: var(--secondary-color);
-  color: var(--text-color);
+  color: var(--text-color-light);
   border-color: var(--secondary-color);
 }
 button.primary-button:active {
@@ -160,7 +160,7 @@ button.secondary-button {
 }
 button.secondary-button:hover {
   background: var(--secondary-color);
-  color: var(--text-color);
+  color: var(--text-color-light);
   border-color: var(--secondary-color);
 }
 button.secondary-button:active {
@@ -219,6 +219,9 @@ button.secondary-button:active {
   font-size: var(--p);
   color: var(--text-color-light);
 }
+.cover__navigation ul li a:hover {
+  text-decoration: underline;
+}
 .cover__logo__title {
   display: flex;
   flex-direction: row;
@@ -228,15 +231,19 @@ button.secondary-button:active {
 .cover__hb {
   font-size: 28px;
   color: var(--text-color-light);
+  background-color: transparent;
   cursor: pointer;
   display: none;
+  border: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
 .cover__hb-close {
   font-size: 28px;
   color: var(--text-color-light);
+  background-color: transparent;
   cursor: pointer;
   display: none;
+  border: var(--primary-color);
 }
 .cover__hb-menu {
   background-color: var(--primary-color);
@@ -274,12 +281,16 @@ button.secondary-button:active {
   opacity: 0;
   background-color: var(--primary-color);
   box-sizing: border-box;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 .cover-bottom.hb-active {
   opacity: 1;
   transform: translateY(0);
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 .cover__hb-menu-button {
   text-decoration: none;
@@ -288,7 +299,7 @@ button.secondary-button:active {
   color: var(--text-color-light);
 }
 .cover__hb-menu-button:hover {
-  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 /* footer styles: */
@@ -321,18 +332,18 @@ button.secondary-button:active {
   align-items: center;
   margin-top: 20px;
 }
-.footer__socials i.social-icon {
+.footer__socials a.social-icon {
   font-size: 2em;
   color: var(--text-color-light);
   transition: all 0.2s ease-in-out;
 }
-.footer__socials i.social-icon:hover {
+.footer__socials a.social-icon:hover {
   color: var(--text-color-light);
   cursor: pointer;
   scale: 1.3;
   transition: all 0.2s ease-in-out;
 }
-.footer__socials i.social-icon:active {
+.footer__socials a.social-icon:active {
   transform: scale(0.6);
 }
 .footer__anchors {
@@ -348,6 +359,15 @@ button.secondary-button:active {
   justify-content: space-between;
   align-items: flex-end;
   gap: 8px;
+}
+.footer__links a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-size: var(--p);
+  color: var(--text-color-light);
+}
+.footer__links a:hover {
+  text-decoration: underline;
 }
 .footer__copyright {
   text-align: center;
@@ -676,7 +696,7 @@ button.secondary-button:active {
 }
 .achievement-element img {
   align-self: center;
-  width: 50%;
+  width: calc(100vw / 8);
   height: 100%;
 }
 
@@ -721,7 +741,7 @@ button.secondary-button:active {
   border: 1px solid var(--primary-color);
 }
 .academics-chapter-header:hover h4 {
-  color: var(--text-color);
+  color: var(--text-color-light);
 }
 .academics-chapter-header h4 {
   color: var(--text-color);
@@ -779,7 +799,7 @@ button.secondary-button:active {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 80;
   align-items: flex-start;
 }
 .contact-info h4 {
@@ -839,6 +859,10 @@ textarea,
 .form-bottom button {
   min-width: fit-content;
 }
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (max-width: 1420px) {
   .cover__navigation {
@@ -849,7 +873,7 @@ textarea,
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 990px) {
   h1 {
     font-size: var(--h1-tablet);
   }
